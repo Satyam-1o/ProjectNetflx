@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+/* Navbar Styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    border-bottom: 1px solid #333;
+}
+
+.logo {
+    font-size: 3rem;
+    color: red;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+    color: red;
+    border-bottom: 3px solid red;
+}
+
+.heading{
+    padding-top: 100px;
+    font-size: 5.0rem;
+}
+.movie-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    padding: 40px;
+    justify-content: center;
+}
+
+.movie-card {
+    background-color: black;
+    border-radius: 1px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    width: 200px;
+    margin: 10px;
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}

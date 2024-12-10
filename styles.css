@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+/* Navbar Styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    border-bottom: 1px solid #333;
+}
+
+.logo {
+    font-size: 3rem;
+    color: red;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+    color: red;
+    border-bottom: 3px solid red;
+}
+
+/* Mood Section Styles */
+.mood-heading {
+    font-size: 5.4rem;
+    margin-top: 10rem; /* Space below navbar */
+    margin-bottom: 2.5rem;
+    color: #fff;
+}
+
+.mood-buttons {
+    margin-top: 2rem;
+}
+
+.mood-btn {
+    background: transparent;
+    color: white;
+    font-size: 2rem;
+    padding: 10px 30px;
+    border-radius: 1px;
+    cursor: pointer;
+    margin: 2px;
+    transition: 0.3s ease;
+}
+
+.mood-btn:hover {
+    background-color: rgba(255, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+.recommendations {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.movie {
+    background-color: #1e1e1e;
+    border-radius: 1px;
+    width: 150px;
+    padding: 0px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    cursor: pointer;
+}
+
+.movie:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.movie img {
+    border-radius: 1px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.movie-details {
+    background-color: #242424;
+    height: auto;
+    width: 24.25cm;
+    border-radius: 1px;
+    padding: 20px;
+    color: #e0e0e0;
+    position:static;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 1.5rem ;
+}
+
+.movie-title {
+    font-size: 10px;
+    padding: 5px; /* Adjust the padding as needed */
+    display: block; /* Ensure the padding is applied properly */
+}
+

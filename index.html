@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieMood</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header id="navbar">
+        <a href="index.html" class="logo">MovieMood</a>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="movies\movies.html">Movies</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+
+    <div class="container">
+        <h2 class="mood-heading">How are you <em style="color: red;">feeling</em> today?</h2>
+        <div class="mood-buttons">
+            <button class="mood-btn" id="popularBtn">🔥 Popular</button>
+            <button class="mood-btn" id="happyBtn">😊 Happy</button>
+            <button class="mood-btn" id="sadBtn">😢 Sad</button>
+            <button class="mood-btn" id="excitedBtn">🤩 Excited</button>
+            <button class="mood-btn" id="funnyBtn">🤣 Funny</button>
+            <button class="mood-btn" id="romanticBtn">❤️ Romantic</button>
+        </div>
+        <div id="recommendations" class="recommendations"></div>
+    </div>
+
+    <script src="script.js" "></script>
+</body>
+</html>
