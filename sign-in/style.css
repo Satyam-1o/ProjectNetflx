@@ -1,0 +1,127 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+/* Navbar Styles */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 9%;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  border-bottom: 1px solid #333;
+}
+
+.logo {
+  font-size: 3rem;
+  color: red;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+nav a {
+  font-size: 1.8rem;
+  color: white;
+  margin-left: 4rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+  color: red;
+  border-bottom: 3px solid red;
+}
+
+/* Sign In Form */
+.signin-page {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 5rem); /* Adjust for the navbar height */
+  padding: 2rem;
+}
+
+.signin-form {
+  background-color: black;
+  padding: 3rem;
+  border-radius: 2px;
+  box-shadow: 0 0 100px rgba(255, 0, 0, 0.2); /* Red shadow effect */
+  width: 40rem;
+}
+
+.signin-form h1 {
+  font-size: 5rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.input-group {
+  margin-bottom: 2rem;
+}
+
+.input-group label {
+  font-size: 1.4rem;
+  color: white;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.4rem;
+  border: 1px solid black;
+  border-radius: 2px;
+  background-color: #222;
+  color: white;
+}
+
+.signin-btn {
+  width: 100%;
+  padding: 1.5rem;
+  background-color: red;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signin-btn:hover {
+  background-color: darkred;
+}
